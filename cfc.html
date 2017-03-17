@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+			function aboutus()
+			{
+				document.getElementsByTagName("h1")[0].innerHTML = "About us";
+			}
+
+			function animals()
+			{
+				document.getElementsByTagName("h1")[0].innerHTML = "Animals";
+			}
+
+			function home()
+			{
+				document.getElementsByTagName("h1")[0].innerHTML = "Coding for Change";
+			}
+
+			function featurestories()
+			{
+				document.getElementsByTagName("h1")[0].innerHTML = "Feature Stories";
+			}
+		</script>
+		<style>
+			@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
+
+			*
+			{
+				margin:0;
+				padding:0;
+				font-family:"Anonymous Pro";
+			}
+
+			html {width:100%;height:100%;}
+
+			body
+			{
+				background-color:#fff;
+				height:100%;
+				width:100%;
+			}
+
+			h1
+			{
+				margin-top:10%;
+				height:30%;
+				color:#262626;
+				font-size:128pt;
+				user-select:none;
+			}
+
+			#container
+			{
+				width:100%;
+				height:75%;
+				display:inline-flex;
+			}
+
+			.item
+			{
+				flex:1;
+				margin-top:15%;
+				width:25%;
+				height:60%;
+				user-select:none;
+			}
+
+			#aboutus{background-color:#590000;}
+			#aboutus:hover{background-color:#370000;}
+			#animals{background-color:#005900;}
+			#animals:hover{background-color:#003700;}
+			#home{background-color:#000059;}
+			#home:hover{background-color:#000037;}
+			#featurestories{background-color:#595959;}
+			#featurestories:hover{background-color:#373737;}
+
+			.item h1
+			{
+				margin-top:50%;
+				color:white;
+				font-size:64pt;
+			}
+		</style>
+		<center><h1>Coding for Change</h1></center>
+		<div id="container">
+			<div class="item" id="aboutus" onclick="aboutus()"><center><h1>About us</h1></center></div>
+			<div class="item" id="animals" onclick="animals()"><center><h1>Animals</h1></center></div>
+			<div class="item" id="home" onclick="home()"><center><h1>Home</h1></center></div>
+			<div class="item" id="featurestories" onclick="featurestories()"><center><h1>Feature Stories</h1></center></div>
+		</div>
+	</body>
+</html>
